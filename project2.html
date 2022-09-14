@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+   
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Document</title>
+    <style>
+       
+
+       
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color: black;
+        }
+        /*csss for navbar*/
+        .homh1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 1000;
+            font-size: 35px;
+            color: #ff9933;
+            margin-left: -35px;
+            margin-right: 130px;
+            text-decoration: none;
+        }
+        
+        li,
+        a {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            color: #edf0f1;
+            text-decoration: none;
+        }
+        
+        .headnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 5%;
+        }
+        
+        .nav_links {
+            list-style: none;
+        }
+        
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 15px;
+        }
+        
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: #0088a9;
+        }
+        
+        .cta {
+            padding: 9px 25px;
+            margin-right: -26px;
+            background-color: #ff9933;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        
+        @media (max-width:990px) {
+            .homh1 {
+                padding-left: 2%;
+            }
+            .cta {
+                margin-right: 2%;
+            }
+            .nav_links {
+                display: block;
+            }
+            /* .navh {} */
+        }
+        
+        @media (max-width:500px) {
+            .nav_links {
+                display: none;
+            }
+            .homh1 {
+                padding-left: 10%;
+            }
+            .cta {
+                padding-right: 10%;
+            }
+        }
+        /*css for home*/
+        #sec1icons{
+    margin-top: 1%;
+    display: flex;
+   
+    
+}
+.i1{
+    padding-left: 15px;
+
+    color: white;
+}
+        .sec1 {
+            height: auto;
+            width: 100vw;
+            display:flex;
+          
+            background-color: black;
+        }
+        
+        .body-text {
+           
+            margin-left: 10%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline-block;
+            margin-top:80px;
+        }
+        
+       
+        
+         
+        .whitw {
+            font-size: 50px;
+            margin-bottom: 24px;
+        }
+        
+        .btn {
+            background-color: #ff9933;
+            border-radius: 35px;
+            margin-top: 45px;
+            margin-left: 13px;
+            padding: 18px;
+            color: white;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 14px 16px;
+            box-shadow: 2px 3px gold;
+        }
+        
+        #button2 {
+            margin-left: -5px;
+            margin-bottom: 140px;
+            height: 55px;
+            width: 195px;
+        }
+        #button2:hover{
+            background-color: pink;
+        }
+        
+        
+        #hoi1{
+           
+            width: 350px;
+            height: 350px;
+             margin-top:50px;
+           
+            /* margin-left: -160px; */
+            margin-left:60%;
+            border-radius: 50%;
+        }
+        /*css for navbar*/
+        
+        /*css for services*/
+        #sh1{
+            color: white;
+            font-size: 57px;
+            margin-left: 3%;
+            margin-top: 10%;
+            font-weight: bold;
+        }
+        #sh2{
+            color:orange;
+            font-size: 57px;
+            margin-left: 3%;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #sp1{
+            color:white;
+            margin-left:3%;
+            float: left;
+            
+             
+        }
+        
+        #fir{
+    height: 300px;
+    width: 280px;
+  background-color: white; 
+    color: black;
+    float: right;
+    margin-top: -100px;
+    margin-right: 130px;
+    border-radius: 4px;
+    text-align: center;
+   
+        }
+        .serbut {
+            background-color: #ff9933;
+            border-radius: 35px;
+            margin-top: 45px;
+            margin-left: -500px;
+            padding: 18px;
+            color: white;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 14px 16px;
+            box-shadow: 2px 3px gold;
+        }
+        #fir:hover{
+            transform: translateX(-50px);
+        }
+        
+        #serb1{
+   margin-top:2%;
+    margin-left:75% ;
+    margin-right: 40px;
+    font-size: 30px;
+    padding: 10px;
+    color: blue;
+    background-color:white;
+    border-radius: 10%;
+   
+
+}
+#serb2{
+   margin-top:2%;
+    margin-left:35% ;
+    margin-right: 40px;
+    font-size: 30px;
+    padding: 10px;
+    color: blue;
+    background-color:white;
+    border-radius: 10%;
+   
+
+}
+#serb3{
+   margin-top:2%;
+    margin-left:72% ;
+    margin-right: 40px;
+    font-size: 30px;
+    padding: 10px;
+    color: blue;
+    background-color:white;
+    border-radius: 10%;
+   
+
+}
+#secondd{
+    height: 300px;
+    width: 280px;
+  background-color: white; 
+    color: black;
+    float: right;
+    margin-top: -100px;
+   margin-right:750px ;
+    border-radius: 4px;
+    text-align: center;
+   
+   
+   
+}
+#secondd:hover{
+    transform: translateX(20px);
+}
+#thirdd:hover{
+    transform: translateX(20px);
+}
+
+#thirdd{
+
+
+    height: 300px;
+    width: 280px;
+  background-color: white; 
+    color: black;
+    float: right;
+    margin-top: 5px;
+    margin-right: 180px;
+    border-radius: 4px;
+    text-align: center;
+
+}
+#serb1:hover{
+    transform: scale(1.1);
+}
+#serb2:hover{
+    transform: scale(1.1);
+}
+#serb3:hover{
+    transform: scale(1.1);
+}
+#sp2{
+    margin-top:50px;
+}
+        /*css for 3circles*/
+        #_3circles{
+margin-top: 15%;
+        }
+        .container {
+            height: 200px;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 2fr;
+            grid-template-columns: 5fr 5fr 5fr;
+            grid-template-areas: "h n1 n2";
+            /* 4 rows means 4 double quotes  */
+        }
+        
+        .header {
+            background-color: black;
+            grid-area: h;
+            border: 2px solid black;
+            padding-left: 55%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .nav1 {
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            grid-area: n1;
+            padding-left: 25%;
+        }
+        
+        .nav2 {
+            background-color: black;
+            grid-area: n2;
+            padding-right: 55%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .circle {
+            height: 80px;
+            width: 80px;
+            font-size: 45px;
+            border-radius: 50%;
+            color: orange;
+           text-align: center;
+            align-items: center;
+            margin-top: 5px;
+            margin-left: 10px;
+            padding-top: 2px;
+            margin-bottom: 35px;
+            background-color: white;
+        }
+        
+        .w1 {
+            margin-left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .w2 {
+            color: orange;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+
+        /*css for interested*/
+        #inth1{
+            color: white;
+            font-size: 57px;
+            margin-left: 3%;
+            margin-top: 10%;
+            font-weight: bold;
+        }
+        #inth2{
+            color:orange;
+            font-size: 57px;
+            margin-left: 3%;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #intp1{
+            color:white;
+            margin-left:3%;
+            float: left;
+            
+             
+        }
+        #div11{
+            position: relative;
+        }
+        #circle1{
+            background-color:white;
+            height: 300px;
+            width:300px;
+            border-radius: 50%;
+            position: relative;
+            margin-top: -150px;
+            margin-left: 60%;
+            border: 3px solid grey;
+            
+        }
+        #circle2{
+            background-color:blue;
+            height: 200px;
+            width:200px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            margin-left:200px;
+        }
+        #circle3{
+            background-color:yellow;
+            height: 200px;
+            width:200px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            margin-left:200px;
+            margin-top: 170px;
+        }
+        #circle4{
+            background-color:whitesmoke;
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            position: absolute;
+           margin-top: -40px;
+            margin-left:100px;
+            border: 2px solid grey;
+           
+        }
+        #circle5{
+            background-color:whitesmoke;
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            position: absolute;
+           margin-top: 100px;
+            margin-left:270px;
+            border: 2px solid grey;
+           
+        }
+        #circle6{
+            background-color:whitesmoke;
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            position: absolute;
+           margin-top: 100px;
+            margin-left:-40px;
+            border: 2px solid grey;
+           
+        }
+        #circle7{
+            background-color:whitesmoke;
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            position: absolute;
+           margin-top: 100px;
+            margin-left:100px;
+            border: 2px solid grey;
+           
+        }
+        #circle8{
+            background-color:whitesmoke;
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            position: absolute;
+           margin-top: 240px;
+            margin-left:100px;
+            border: 2px solid grey;
+           
+        }
+       
+        #google1{
+            height: 90px;
+         border-radius: 50%;
+         margin-top: 3%;
+         margin-left: 5%;
+
+        }
+        #intd1{
+            margin-left: 50%;
+           
+        }
+        #intd3{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin-left:-25% ;
+            padding-top: 20px;
+        }
+      
+        #intd4{
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: -200px;
+            margin-left: 10%;
+            display: inline-block;
+        }
+        /*css for portfolio*/
+        #portfolio{
+            margin-top: 10%;
+        }
+        #ph1{
+            color: white;
+            font-weight: bold;
+         text-align: center;
+        
+        }
+        #ph2{
+            color: orange;
+            font-weight: bold;
+            
+            margin-left: 40%;
+            
+        }
+        #cardcontainer{
+            display: inline-flex;
+            justify-content: space-around;
+        }
+        
+        #ccd1{
+            color: white;
+            background-color:#333333;
+            height: 300px;
+            width: 250px;
+            border-radius: 15px;
+           display: inline-block;
+           justify-content: space-around;
+           margin-left: 5%;
+          
+         
+           margin-top:5% ;
+          
+           
+        }
+        #ccd1:hover{
+           transform: translate(0,-30px);
+        }
+        
+        
+        #cch1{
+            text-align: center;
+            padding-top: 5px;
+        }
+        #ccp1{
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        #ccb1{
+    height: 40px;
+    width: 70px;
+    color:white;
+    background-color:#333333;
+    border-left: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+    border-radius: 10px;
+   margin-left:40% ;
+}
+         /*css for education*/
+         #education{
+            margin-top: 10%;
+         }
+        #eh1{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        #eh2{
+            color: orange;
+        }
+        #ed1{
+            height: 250px;
+            width: 500px;
+            background-color: grey;
+            margin-left: 30%;
+            margin-top: 3%;
+            border: 5px solid white;
+            border-radius: 15px;
+           
+        }
+        
+        #ei1{
+            height:100px ;
+            width: 100px;
+            border-radius: 50%;
+        margin-left: 40%;
+        margin-top: 8px;
+        }
+        #ep1{
+             color: orange;
+             text-align: center;
+        }
+#ep2{
+    color: white;
+    text-align: center;
+}
+#eb1{
+    height: 40px;
+    width: 70px;
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+   margin-left:45% ;
+}
+
+        /*css for contact1*/
+        #c1{
+            color: white;
+            font-size: 57px;
+            margin-left: 10%;
+            margin-top: 20%;
+            font-weight: bold;
+        }
+        #c2{
+            color:orange;
+            font-size: 57px;
+            margin-left: 10%;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #ic1{
+            color: grey;
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+            
+        }
+        #ic2{
+            color: grey;
+            height: 30px;
+            width: 300px;
+            border-radius: 5px;
+        }
+        #ic3{
+            
+            color: grey;
+            height: 100px;
+            border-radius: 5px;
+        
+        }
+        #bc1{
+            color: white;
+background-color: orange;
+height: 50px;
+width: 80px;
+border-radius: 35%;
+margin-left: 10%;
+        }
+        #cd1{
+            margin-left:50%;
+            margin-top:-150px;
+            margin-left: 45%;  
+        }
+        /*css for contact2*/
+        #contact2{
+          background-color: #ffd700;
+            height: 200px;
+            width: 100vw;
+        }
+        #co2p{
+            color: red;
+            text-align: center;
+            padding-top:0px;
+        }
+#icons{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+i{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+@media(max-width:1245px){
+    #ccd1{
+        margin-left: 2%;
+        
+    }
+    #hoi1{
+        margin-left: 15%;
+    }
+    #serb1{
+        margin-left: 70%;
+    }
+    #serb2{
+        margin-left: 20%;
+    }
+    #serb3{
+        margin-left: 20%;
+    }
+}
+
+ @media(max-width:1000px){
+   #cd1{
+    margin-left: 50%;
+   }
+   #div11{
+   margin-top: 30%;
+   margin-left: -1200px;
+   }
+   
+   .container{
+    margin-left: 15%;
+    margin-top: 10%;
+   }
+   #item1,#item2{
+margin-left: -2%;
+margin-right: -2%;
+   }
+.sec1{
+display: block;
+}
+#hoi1{
+    margin-top: -10%;
+    margin-left: 5%;
+
+}
+#sec1icons{
+   display: none;
+}
+#servicesdiv{
+    margin-top: 20%;
+   
+}
+#fir{
+    margin-top:2%;
+    margin-right: 200px;
+}
+#secondd{
+    margin-top:2%;
+   margin-right: 200px;
+}
+#thirdd{
+    margin-top:2%;
+   margin-right: 200px;
+}
+#serb1,#serb2,#serb3{
+    margin-left: 300px;
+}
+
+
+   
+ }  
+ @media(max-width:840px){
+    
+   #cd1{
+    margin-left: 55%;
+   }
+   #c1{
+margin-left:5% ;
+   }
+   #c2{
+    margin-left:5% ;
+
+   }
+   #ed1{
+    width: 100vw;
+    margin-left: 0px;
+   }
+   #div11{
+   margin-top: 42%;
+   margin-left: -700px;
+   }
+   #item5{
+    margin-left: -40px;
+   }
+   #item1{
+    margin-left: 5px;
+   
+   }
+   #item2{
+    margin-left:20px ;
+   }
+   
+   
+ }  
+ @media(max-width:676px){
+   #cd1{
+    margin-left: 5%;
+    margin-top: 8%;
+   }
+   #c1{
+margin-left:10% ;
+   }
+   #c2{
+    margin-left:10% ;
+
+   }
+   #bc1{
+    margin-left: 20%;
+   }
+   #ccd1{
+ margin-left: 10%;
+   }
+   #div11{
+   margin-top: 50%;
+   margin-left: -700px;
+   }
+   #fir{
+    margin-top:2%;
+    margin-right: 100px;
+}
+#secondd{
+    margin-top:2%;
+   margin-right: 100px;
+}
+#thirdd{
+    margin-top:2%;
+   margin-right: 100px;
+}
+#serb1,#serb2,#serb3{
+    margin-left: 200px;
+}
+
+ }  
+ @media(max-width:588px)  {
+    #div11{
+   margin-top: 80%;
+   margin-left: -500px;
+   }
+   #circle2{
+    margin-left: 150px;
+   }
+   #circle3{
+    margin-left: 150px;
+    margin-top: 100px;
+   }
+   #ph1{
+   margin-left: 32%;
+   }
+   #ph2{
+    margin-left: 32%;
+   }
+   #item5{
+    margin-left: -150px;
+   }
+   #item1{
+    margin-left: -35%;
+   }
+   .serbut{
+    margin-top: 10%;
+    margin-left:30%;
+   }
+ }   
+ @media(max-width:429px){
+    .container{
+        margin-top: 20%;
+    }
+    #item1{
+    margin-left: -92px;
+   
+    
+   }
+   #item5{
+    margin-left:-150px;
+   }
+   #item2{
+    margin-left:-50px;
+    
+   }
+   #fir{
+    margin-top:2%;
+    margin-right: 70px;
+}
+#secondd{
+    margin-top:2%;
+   margin-right: 70px;
+}
+#thirdd{
+    margin-top:2%;
+   margin-right: 70px;
+}
+#serb1,#serb2,#serb3{
+    margin-left: 100px;
+}
+
+   
+   
+ }
+    
+
+    </style>
+</head>
+
+<body>
+    <header class="headnav">
+        <h2 class="homh1">Coding Blocks
+            <!-- <button class="cta1"><i></i></button> -->
+        </h2>
+        <nav clas="navh">
+
+            <ul class="nav_links">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Services </a></li>
+                <li><a href="#"> Interested </a></li>
+                <li><a href="#"> Portfolio </a></li>
+                <li><a href="#"> Education </a></li>
+            </ul>
+        </nav>
+        <a href="#"><button class="cta">Contact</button></a>
+
+    </header>
+   
+        <section class="sec1">
+            
+            <div class="body-text">
+                <h1 class="whitw" style="color:white">Hy! I Am</h1>
+                <h1 class="whitw" style="color:#ff9933 ;">Bhawna Chetan</h1>
+                <h4 style="color: white;"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Sunt placeat vel veritatis sequi laborum, iure quam.</h4>
+                <button type="button" class="btn" id="button2">Hire Me</button>
+                <div id="sec1icons">
+                    <i  class="fa-brands fa-facebook fa-3x i1" ></i>
+                    <i  class="fa-brands fa-instagram fa-3x i1" ></i>
+                    <i  class="fa-brands fa-github fa-3x i1"></i>
+                  
+                  </div>
+            </div>
+            <div>
+         
+                <img src="bhawna.jpg.jpeg" alt="mountains" id="hoi1"></div>
+        </section>
+
+
+        <section id="services">
+            <div>
+            <h1 id="sh1">My Awesome</h1>
+            <h1 id="sh2">services</h1>
+            <p id="sp1">I am on my way to success and sucess is never final.<br>As a software developer
+                my success will be to work in these FAANG companies.<br>
+                
+        </p>
+        <br>
+        <button type="button" class="serbut" >Download CV</button>
+        </div>
+        <div id="servicesdiv">
+        <div id="fir">
+            
+            <span style='font-size:100px; background-color: white; margin-bottom: 200px;'>&#128536;</span>
+            
+
+           <p id="sp2"> figma, sketch,<br>
+            Photoshop, Adobe<br>
+            Ilusion, Adobe</p>
+
+           
+        </div>
+
+        <button id="serb1">Learn More</button>
+        <div id="secondd">
+            
+            <span style='font-size:100px; background-color: white; margin-bottom: 200px;'>&#128526;</span>
+            <p id="sp2">
+
+            figma, sketch,<br>
+            Photoshop, Adobe<br>
+            Ilusion, Adobe</p>
+
+            
+        </div>
+        <button id="serb2">Learn More</button>
+        <div id="thirdd">
+            
+            <span style='font-size:100px; background-color: white; margin-bottom: 200px;'>&#128519;</span>
+            
+
+           <p id="sp2"> figma, sketch,<br>
+            Photoshop, Adobe<br>
+            Ilusion, Adobe</p>
+
+            
+        </div>
+        <button id="serb3">Learn More</button>
+       
+</div>
+        </section>
+   
+    <section id="_3circles">
+        <div class="container">
+            <div class="header" id="item5">
+                <div class="circle">1+</div>
+                <span class="w1">Years</span><br><br>
+                <span class="w2">Experience</span>
+            </div>
+    
+            <div class="nav1" id="item1">
+                <div class="circle">10+</div>
+                <span class="w1" id="com1">Completed</span><br><br>
+                <span class="w2">Projects</span>
+            </div>
+            <div class="nav2" id="item2">
+                <div class="circle">1+</div>
+                <span class="w1" id="com2">Companies</span><br><br>
+                <span class="w2">Work</span>
+            </div>
+    </section>
+   
+    <section id="interested">
+        <div id="intdiv">
+            <h1 id="inth1">I want to work for</h1>
+            <h1 id="inth2">These brands</h1>
+            <p id="intp1">I am on my way to success and sucess is never final.<br>As a software developer
+                my success will be to work in these FAANG companies.<br>
+                It will require smart work with<br>
+                struggle and I'm confident that one day I'll achieve this success.
+                <br>
+                <br>
+                <br>
+            </p>
+        </div>
+            <div id="div11">
+                <div id="circle1">
+                  <div id="circle2"></div>
+                  <div id="circle3"></div>
+                  <div id="circle4"><img src="zoom.png" id="google1"></div>
+                  <div id="circle5"><img src="google.jpg" id="google1" ></div>
+                  <div id="circle6"><img src="Swiggy.jpg" id="google1" ></div>
+                  <div id="circle7"><img src="infosys.jpg" id="google1" ></div>
+                  <div id="circle8"><img src="meesho.png" id="google1"></div>
+              
+                </div>
+                </div>
+           
+        
+         
+    </section>
+    <br>
+    <br>
+
+    <section id="portfolio" >
+
+<h2 id="ph1" >Recent Projects</h1>
+<h1 id="ph2">Portfolio</h1>
+<div class="cardcontainer">
+<div id="ccd1">
+    <h5 id="cch1">Coding Blocks</h5>
+    <p id="ccp1">Lorem ipsum dolor sitamet consectetur adipisicing elit.
+         Ipsa provident fugiat tenetur necessitatibus quaerat!
+          Dolor doloremque laboriosam sit minima suscipit iure vitae a voluptatibus.</p>
+          <button id="ccb1">view</button>
+</div>
+<div id="ccd1">
+    <h5 id="cch1">Coding Blocks</h5>
+    <p id="ccp1">Lorem ipsum dolor sitamet consectetur adipisicing elit.
+         Ipsa provident fugiat tenetur necessitatibus quaerat!
+          Dolor doloremque laboriosam sit minima suscipit iure vitae a voluptatibus.</p>
+          <button id="ccb1">view</button>
+</div>
+<div id="ccd1">
+    <h5 id="cch1">Coding Blocks</h5>
+    <p id="ccp1">Lorem ipsum dolor sitamet consectetur adipisicing elit.
+         Ipsa provident fugiat tenetur necessitatibus quaerat!
+          Dolor doloremque laboriosam sit minima suscipit iure vitae a voluptatibus.</p>
+          <button id="ccb1">view</button>
+</div>
+<div id="ccd1">
+    <h5 id="cch1">Coding Blocks</h5>
+    <p id="ccp1">Lorem ipsum dolor sitamet consectetur adipisicing elit.
+         Ipsa provident fugiat tenetur necessitatibus quaerat!
+          Dolor doloremque laboriosam sit minima suscipit iure vitae a voluptatibus.</p>
+          <button id="ccb1">view</button>
+</div>
+<div>
+
+    </section>
+    <section id="education">
+<h1 id="eh1">Clients always get <span id="eh2">Exceptional Work</span> from me.. </h1>
+
+<div id="ed1">
+<img src="bhawna.jpg.jpeg" id="ei1">
+<p id="ep1">Chitkara University,Rajpura</p>
+<p id="ep2">2020-2024</p>
+<button id="eb1">Visit</button>
+</div>
+    </section>
+    
+    <section id="contact">
+    <h1 id="c1" >Get in Touch</h1>
+    <h1 id="c2">Contact me</h1>
+    <div id="cd1" >
+    <input type="text" placeholder="Name" id="ic1" >
+    <br>
+    <br>
+    <input type="email" placeholder="Email" id="ic2" >
+    <br>
+    <br>
+    <textarea type="text" placeholder="Message" rows="3" cols="39" id="ic3"></textarea>
+    <br>
+    <br>
+    <button id="bc1" >Send</button>
+
+    </div>
+    </section>
+
+    
+ 
+      <div>
+  
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,160L80,165.3C160,171,320,181,480,197.3C640,213,800,235,960,224C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>   
+
+        <section id="contact2" style="margin-top:-4px ;">
+   
+<p id="co2p">
+    bhawnachetan08@gmail.com
+</p>
+
+<div id="icons">
+    <i class="fa-brands fa-facebook fa-3x" ></i>
+    <i class="fa-brands fa-instagram fa-3x" ></i>
+    <i class="fa-brands fa-github fa-3x"></i>
+  
+  </div>
+  
+   
+
+    </section>
+    </div>
+
+</body>
+</html>
